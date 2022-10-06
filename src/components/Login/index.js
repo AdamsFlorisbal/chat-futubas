@@ -1,5 +1,5 @@
 import React from "react";
-import { auth, provider } from "../../../services/firebase";
+import { auth, provider } from "../../services/firebase";
 import * as C from "./styles";
 
 const Login = () => {

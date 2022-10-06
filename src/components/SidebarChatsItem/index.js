@@ -1,6 +1,6 @@
 import React from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
-import { db } from "../../../services/firebase";
+import { db } from "../../services/firebase";
 import * as C from "./styles";
 import { MdPerson } from "react-icons/md";
 
