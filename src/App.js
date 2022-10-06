@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth, db } from "./services/firebase";
+import { auth, db } from "../services/firebase";
 import Login from "./components/Login/index";
 import Loading from "./components/Loading/Index";
+import Sidebar from "./components/Sidebar/index";
 
 const App = () => {
   const [user, loading] = useAuthState(auth);
@@ -20,7 +21,11 @@ const App = () => {
 
   if (!user) return <Login />;
 
-  return <div>app</div>
+  return (
+    <>
+    <Sidebar/>
+    </>
+  )
 }
 
   export default App;
