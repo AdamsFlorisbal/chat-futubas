@@ -2,7 +2,7 @@ import React from "react";
 import ChatHeader from "../ChatHeader";
 import * as C from "./styles";
 import Default from "./../Default";
-import ChatBody from "../ChatBody";
+import ChatBody from "../ChatBody/index";
 import ChatFooter from "../ChatFooter";
 
 const Chat = ({ userChat }) => {

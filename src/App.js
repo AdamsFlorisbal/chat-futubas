@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Chat from "./components/Chat";
+import Chat from "./components/Chat/index";
 import Sidebar from "./components/Sidebar";
 import * as C from "./styles/app";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "./services/firebase";
-import Login from "./components/Login";
-import Loading from "./components/Loading";
+import Login from "./components/Login/index";
+import Loading from "./components/Loading/Index";
 
 const App = () => {
   const [user, loading] = useAuthState(auth);
